@@ -1,0 +1,12 @@
+command:
+  - "python"
+  - "weather_mcp_server.py"
+
+resources:
+  - name: requirements
+    source:
+      path: ./requirements.txt
+
+env:
+  - name: WEATHER_API_TIMEOUT_SECONDS
+    value: "15"

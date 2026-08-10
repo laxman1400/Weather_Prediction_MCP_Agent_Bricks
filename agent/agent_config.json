@@ -1,0 +1,28 @@
+{
+  "agent_name": "weather-planning-agent",
+  "description": "Agent Bricks weather assistant using an external Weather Prediction MCP server.",
+  "external_mcp_service_name_suggestion": "weather-prediction",
+  "tools": [
+    "get_current_weather",
+    "get_forecast",
+    "get_travel_recommendation",
+    "health"
+  ],
+  "system_prompt_file": "SYSTEM_PROMPT.md",
+  "guardrails": [
+    "Never fabricate weather data.",
+    "Use MCP tools before making factual current/future weather claims.",
+    "Ask for clarification when a location cannot be resolved.",
+    "Do not invent official severe-weather alerts."
+  ],
+  "demo_prompts": [
+    "What's the weather in Chicago right now?",
+    "Will it rain in Chicago tomorrow?",
+    "Should I bring a jacket to Austin tomorrow?"
+  ],
+  "deployment_placeholders": {
+    "databricks_mcp_app_url": "<ADD_AFTER_DEPLOYMENT>",
+    "registered_mcp_service": "<ADD_AFTER_REGISTRATION>",
+    "agent_name_or_url": "<ADD_AFTER_AGENT_CREATION>"
+  }
+}
