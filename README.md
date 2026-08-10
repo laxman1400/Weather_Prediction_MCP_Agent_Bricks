@@ -273,3 +273,9 @@ Before submitting:
 ## Data source
 
 Weather and geocoding data: **Open-Meteo**.
+
+## github repo url
+https://github.com/laxman1400/Weather_Prediction_MCP_Agent_Bricks
+
+## MCP app url
+https://mcp-weather-prediction-7474658703647632.aws.databricksapps.com
